@@ -1,0 +1,226 @@
+@import url("./global.css");
+@import url("./reset.css");
+@import url("./components/_pills.css");
+@import url("./components/_link-video-button.css");
+@import url("./components/_gallery.css");
+@import url("./components/_pause-icon.css");
+
+.s-wrapper {
+   display: flex;
+   flex-flow: row nowrap;
+   height: 100vh;
+}
+
+.s-wrapper .s-left-column{
+
+   position: fixed;
+   display: flex;
+
+   justify-content: center;
+   align-items: center;
+
+   width: 100px;
+   height: 100%;
+   left: 0;
+   top: 0;
+   padding-right: 50px;
+
+   background-color: transparent;
+   z-index: 1;
+}
+
+.s-wrapper .s-main-content{
+    
+   position: relative;
+
+   height: 100%;
+   width: 100%;
+
+   padding-left: 130px;   
+}
+
+.s-wrapper .s-main-content__top{
+   
+   display: flex;    
+   flex-direction: column;
+   justify-content: flex-start;
+
+   height: 80vh;
+ }
+
+ .s-wrapper .s-main-content__bottom{
+
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+
+   height: 20vh;    
+ }
+
+ .s-wrapper .s-main-content .s-logo img{
+
+   margin-top: 50px;
+   margin-left: 0;
+   margin-bottom: 30px;     
+ }
+
+ .s-wrapper .s-main-content__top .s-description{
+        
+   max-width: 50%;
+
+   background-color: rgba(0,0,0,0.7);
+
+   padding: 20px;
+   border-radius: 10px;
+}
+
+.s-wrapper .s-main-content__top .s-description .s-description__text p{
+
+   line-height: 170%;
+}
+
+.s-wrapper .s-main-content__top .s-description .pills{
+
+   margin-bottom: 20px;
+}
+
+.s-wrapper video{
+   position: fixed;
+   width: 100%;
+}
+
+.navigator {
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    height: 80vh;
+}
+
+.navigator::before{
+    
+    content: "";
+    
+    position: absolute;
+
+    top: 0;
+    width: 2px;
+    height: 100%;
+
+    background-color: #FFFFFF;
+
+    z-index: 0;
+}
+
+.navigator ul{ 
+
+   z-index: 1; 
+   position: relative;
+ }
+
+.navigator ul li {
+   margin: 60px 0;
+   z-index: 1;
+}
+
+.navigator ul li:first-child {
+    margin-top: 0;
+ }
+
+ .navigator ul li:last-child {
+    margin-bottom: 0;
+ }
+
+ .navigator ul li a{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 45px;
+    height: 45px;
+
+    background-color: #000000;
+
+    border: solid 2px #FFFFFF;
+    border-radius: 50%;
+ }
+
+ .navigator ul li a:hover,
+ .navigator ul li a.active {
+
+    color: var(--primary-color);
+    background-color: #FFFFFF;
+ }
+
+ .navigator .s-navigator__icon{
+
+    position: absolute;
+    top: -20px;
+ }
+ 
+ .s-wrapper .s-main-content .s-links{
+   
+   position: absolute;
+   padding: 20px;
+   padding-left: 0;
+   margin-bottom: 50px;
+ }
+
+ .s-wrapper .s-main-content .s-links ul{
+   
+   display: flex;
+   flex-direction: row;
+ }
+
+.s-spiderman-01-01 {
+   
+   background-image: url("../assets/images/spiderman-tobey/movie-01/background.png");
+   background-size: cover;  
+}
+
+.s-spiderman-01-02 {
+   
+   background-image: url("../assets/images/spiderman-tobey/movie-02/background.png");
+   background-size: cover;  
+}
+
+.s-spiderman-01-03 {
+   
+   background-image: url("../assets/images/spiderman-tobey/movie-03/background.png");
+   background-size: cover;
+}
+
+.s-spiderman-02-01 {
+   
+   background-image: url("../assets/images/spiderman-andrew/movie-01/background.png");
+   background-size: cover;  
+}
+
+.s-spiderman-02-02 {
+   
+   background-image: url("../assets/images/spiderman-andrew/movie-02/background.png");
+   background-size: cover;  
+}
+
+.s-spiderman-03-01 {
+   
+   background-image: url("../assets/images/spiderman-tom/movie-01/background.png");
+   background-size: cover;  
+}
+
+.s-spiderman-03-02 {
+   
+   background-image: url("../assets/images/spiderman-tom/movie-02/background.png");
+   background-size: cover;  
+}
+
+.s-spiderman-03-03 {
+   
+   background-image: url("../assets/images/spiderman-tom/movie-03/background.png");
+   background-size: cover;
+}

@@ -1,0 +1,55 @@
+@import url("./global.css");
+
+div.pause-button{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;        
+}
+
+div.pause-button .icon{
+
+    position: relative;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--primary-color);    
+    background-clip: content-box;
+    
+    height: 32px;
+    width: 32px;
+    padding: 1px;
+
+    border: solid 1px #FFFFFF;
+    border-radius: 22%;
+
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+div.pause-button .icon .pause-icon{
+
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    padding: 2px;
+
+    border: solid 2px #FFFFFF ;
+    border-radius: 2px;
+
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+
+    margin:auto;    
+}
+
+div.pause-button .label{
+    margin-left: 10px;
+}
+
+.hidden{
+    display: none;
+}

@@ -1,0 +1,48 @@
+@import url("./global.css");
+
+a.link-button{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+a.link-button .icon{
+
+    position: relative;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--primary-color);    
+    background-clip: content-box;
+    
+    height: 32px;
+    width: 32px;
+    padding: 1px;
+
+    border: solid 1px #FFFFFF;
+    border-radius: 22%;
+
+    margin-left: 6px;
+}
+
+a.link-button .icon .play-icon{
+
+    width: 0;
+    height: 0;
+
+    border: solid 12px #FFFFFF;
+
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+
+    margin-left: 16px;
+}
+
+a.link-button .label{
+    margin-left: 10px;
+}

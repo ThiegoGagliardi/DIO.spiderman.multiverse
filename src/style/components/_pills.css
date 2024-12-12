@@ -1,0 +1,22 @@
+.pills ul{
+    display: flex;
+    flex-direction: row;
+ }
+
+ .pills ul li{
+
+    margin: 0 10px;
+    
+    padding: 5px 15px;
+
+    border-radius: 20px;
+
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+
+    text-transform: uppercase;
+ }
+
+ .pills ul li:first-child{
+    margin-left: 0;
+ }
